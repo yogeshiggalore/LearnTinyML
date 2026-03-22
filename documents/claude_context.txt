@@ -1,0 +1,15 @@
+I want to use this repo for learning and teaching tinyML for students and professionals.
+1. this repo will be built on embedded machine learning. 
+2. main focus will be on camera, voice and motion (accel, gyro and mag).
+3. before starting machine learning, I want create a 3 course 
+    a. learnaudio
+    b. learnvision
+    c. learnmotion
+    * give some great names 
+4. these courses will cover theory, working principle, firmware code to integrate and test.
+5. I will use zephyr rtos, arduino and esp-idf (if not able to implement it in zephyr or arduino).
+6. I will use microcontrollers like xiao series esp32s3, nrf54l15, mg24.
+7. I will use github pages for hosting documentations. 
+8. create html based (web based) for documents/teaching, backend server is python
+9. at last we can create 3 books for this. 
+10. now give detailed plan for theories.
