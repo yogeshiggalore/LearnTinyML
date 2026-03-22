@@ -32,11 +32,13 @@ Embedded motion sensing fundamentals: physics of motion, magnetism, sensor fusio
 
 ## Hardware
 
-| Board | MCU | Key Features |
-|-------|-----|-------------|
-| XIAO ESP32-S3 Sense | ESP32-S3 | Camera (OV2640), PDM Mic, WiFi/BLE, 8MB PSRAM |
-| XIAO nRF54L15 | nRF54L15 | BLE, Ultra-low power, PDM Mic support |
-| XIAO MG24 | EFR32MG24 | BLE/Zigbee/Thread, AI/ML accelerator |
+| Course | MCU | Sensors / Peripherals |
+|--------|-----|-----------------------|
+| TinyVox | XIAO ESP32-S3 / nRF54L15 | 2x INMP441 (I2S mic), MAX98357A (I2S amp), 4 Ohm speaker |
+| TinyVue | XIAO ESP32-S3 Sense | Onboard OV2640 camera, PDM mic, SD card |
+| TinyVibe | XIAO ESP32-S3 / nRF54L15 | ICM-20948 (9-DoF IMU), W25Q128 (16MB SPI flash) |
+
+See [documents/hardware.md](documents/hardware.md) for full BOM and component details.
 
 ## Frameworks
 
@@ -57,6 +59,7 @@ LearnTinyML/
 ├── documents/          # Course plans and naming documentation
 │   ├── course.md       # Detailed course outline
 │   ├── naming.md       # Course naming rationale
+│   ├── hardware.md     # Bill of materials per course
 │   └── claude_context.txt
 └── README.md
 ```

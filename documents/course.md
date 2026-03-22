@@ -14,11 +14,13 @@
 
 ## Target Hardware
 
-| Board | MCU | Key Features |
-|-------|-----|-------------|
-| XIAO ESP32-S3 Sense | ESP32-S3 | Camera (OV2640), PDM Mic, WiFi/BLE, 8MB PSRAM |
-| XIAO nRF54L15 (planned) | nRF54L15 | BLE, Ultra-low power, PDM Mic support |
-| XIAO MG24 | EFR32MG24 | BLE/Zigbee/Thread, AI/ML accelerator |
+| Board | MCU | Used In |
+|-------|-----|---------|
+| XIAO ESP32-S3 | ESP32-S3 | TinyVox, TinyVibe |
+| XIAO ESP32-S3 Sense | ESP32-S3 | TinyVue (onboard OV2640 camera) |
+| XIAO nRF54L15 | nRF54L15 | TinyVox, TinyVibe |
+
+See [hardware.md](documents/hardware.md) for full BOM per course.
 
 ## Frameworks (Priority Order)
 1. **Zephyr RTOS** - Primary (portable, RTOS features, upstream support)
