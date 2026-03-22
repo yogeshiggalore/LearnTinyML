@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnTinyML — From Sensors to Intelligence</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand" onclick="navigate(null); return false;">LearnTinyML</a>
+            <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navLinks">
+                <a href="#" class="nav-link" onclick="navigate(null); return false;">Overview</a>
+                <a href="#tinyvox" class="nav-link" data-module="tinyvox" onclick="navigate('tinyvox'); return false;">TinyVox</a>
+                <a href="#tinyvue" class="nav-link" data-module="tinyvue" onclick="navigate('tinyvue'); return false;">TinyVue</a>
+                <a href="#tinyvibe" class="nav-link" data-module="tinyvibe" onclick="navigate('tinyvibe'); return false;">TinyVibe</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Overview Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>LearnTinyML</h1>
+            <p class="hero-subtitle">A hands-on learning platform for Embedded Machine Learning</p>
+            <p class="hero-desc">
+                Build a strong foundation in audio, vision, and motion sensing before
+                applying machine learning on microcontrollers. Designed for students and professionals.
+            </p>
+
+            <!-- Learning Path -->
+            <div class="learning-path">
+                <div class="path-title">Learning Path</div>
+                <div class="path-diagram">
+                    <div class="path-courses">
+                        <div class="path-node" style="--accent: #6c5ce7">TinyVox</div>
+                        <div class="path-node" style="--accent: #00b894">TinyVue</div>
+                        <div class="path-node" style="--accent: #e17055">TinyVibe</div>
+                    </div>
+                    <div class="path-arrow">
+                        <svg width="60" height="40" viewBox="0 0 60 40">
+                            <line x1="0" y1="20" x2="45" y2="20" stroke="#555" stroke-width="2"/>
+                            <polygon points="45,12 60,20 45,28" fill="#555"/>
+                        </svg>
+                    </div>
+                    <div class="path-target">TinyML</div>
+                </div>
+            </div>
+
+            <!-- Frameworks -->
+            <div class="frameworks">
+                <span class="fw-badge">Zephyr RTOS</span>
+                <span class="fw-badge">Arduino</span>
+                <span class="fw-badge">ESP-IDF</span>
+            </div>
+        </div>
+
+        <!-- Module Cards -->
+        <div class="cards-container" id="moduleCards">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- Module Detail Section -->
+    <section id="module-detail" class="hidden">
+        <button class="back-btn" onclick="navigate(null); return false;">&larr; Back to Overview</button>
+
+        <div class="module-header" id="moduleHeader">
+            <!-- Populated by JS -->
+        </div>
+
+        <div class="module-body">
+            <!-- Hardware BOM -->
+            <div class="section-block" id="hardwareSection">
+                <h2>Hardware (Bill of Materials)</h2>
+                <div class="hw-summary" id="hwSummary"></div>
+                <div class="table-wrapper">
+                    <table id="bomTable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Component</th>
+                                <th>Description</th>
+                                <th>Qty</th>
+                                <th>Interface</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bomBody"></tbody>
+                    </table>
+                </div>
+                <ul id="hwNotes" class="hw-notes"></ul>
+            </div>
+
+            <!-- Course Outline -->
+            <div class="section-block" id="outlineSection">
+                <h2>Course Outline</h2>
+                <div id="outlineContent"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>LearnTinyML</h4>
+                <p>From sensors to intelligence — learn embedded ML from the ground up.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Courses</h4>
+                <ul>
+                    <li><a href="#tinyvox" onclick="navigate('tinyvox'); return false;">TinyVox — Audio/Voice</a></li>
+                    <li><a href="#tinyvue" onclick="navigate('tinyvue'); return false;">TinyVue — Vision/Camera</a></li>
+                    <li><a href="#tinyvibe" onclick="navigate('tinyvibe'); return false;">TinyVibe — Motion/IMU</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Each Course Covers</h4>
+                <ul>
+                    <li>Theory &amp; Physics</li>
+                    <li>Working Principles</li>
+                    <li>Firmware Implementation</li>
+                    <li>Hands-on Projects</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>LearnTinyML &copy; 2026. Built for learners, by makers.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

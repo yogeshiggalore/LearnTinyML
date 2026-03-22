@@ -56,13 +56,32 @@ See [documents/hardware.md](documents/hardware.md) for full BOM and component de
 
 ```
 LearnTinyML/
-├── documents/          # Course plans and naming documentation
+├── app.py              # Flask backend server
+├── data.py             # Course data (modules, BOM, outlines)
+├── requirements.txt    # Python dependencies
+├── templates/
+│   └── index.html      # Main HTML page
+├── static/
+│   ├── css/
+│   │   └── style.css   # Styling
+│   └── js/
+│       └── app.js      # Frontend logic
+├── documents/
 │   ├── course.md       # Detailed course outline
 │   ├── naming.md       # Course naming rationale
 │   ├── hardware.md     # Bill of materials per course
 │   └── claude_context.txt
 └── README.md
 ```
+
+## Running the Web App
+
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+Open http://localhost:5000 in your browser.
 
 ## License
 
